@@ -316,6 +316,7 @@
     </div>
   </section>
   <!--client_logos-->
+  
 
   <!--/Team-->
   <!--Footer-->
@@ -327,14 +328,14 @@
          
         </div>
         <div class="row">
-          <div class="col-lg-4 wow fadeInLeft">
+          <div class="col-lg-6 wow fadeInLeft">
             <div class="contact_info">
               <div class="detail">
-                <h4>Thang Nguyen</h4>
+                <h4>Address/h4>
                 <p>Tran Phu, Ha Dong, Hanoi</p>
               </div>
               <div class="detail">
-                <h4>call me</h4>
+                <h4>Call me</h4>
                 <p>0971 739 971</p>
               </div>
               <div class="detail">
@@ -342,31 +343,47 @@
                 <p>thangnv97ptit@gmail.com</p>
               </div>
             </div>
+            <ul class="social_links">
+              <li class="pinterest animated bounceIn wow delay-04s animated"
+                style="visibility: visible; animation-name: bounceIn;"><a href="https://github.com/danptit"><i
+                    class="fa fa-github"></i></a></li>
+              <li class="pinterest animated bounceIn wow delay-04s animated"
+                style="visibility: visible; animation-name: bounceIn;"><a
+                  href="https://www.linkedin.com/in/thang-nguyen-891166171/"><i class="fa fa-linkedin"></i></a></li>
+              <li class="twitter animated bounceIn wow delay-02s animated"
+                style="visibility: visible; animation-name: bounceIn;"><a href="https://twitter.com/DanPTIT97"><i
+                    class="fa fa-twitter"></i></a></li>
+              <li class="facebook animated bounceIn wow delay-03s animated"
+                style="visibility: visible; animation-name: bounceIn;"><a
+                  href="https://www.facebook.com/profile.php?id=100009244674126"><i class="fa fa-facebook"></i></a></li>
 
-      
-
-
+              <li class="gplus animated bounceIn wow delay-05s animated"
+                style="visibility: visible; animation-name: bounceIn;"><a
+                  href="https://www.instagram.com/thangdev.official/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            
           </div>
-          <div class="col-lg-8 wow fadeInLeft delay-06s">
-            <!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
-      <ul class="social_links">
-        <li class="pinterest animated bounceIn wow delay-04s animated"
-          style="visibility: visible; animation-name: bounceIn;"><a href="https://github.com/danptit"><i
-              class="fa fa-github"></i></a></li>
-        <li class="pinterest animated bounceIn wow delay-04s animated"
-          style="visibility: visible; animation-name: bounceIn;"><a
-            href="https://www.linkedin.com/in/thang-nguyen-891166171/"><i class="fa fa-linkedin"></i></a></li>
-        <li class="twitter animated bounceIn wow delay-02s animated"
-          style="visibility: visible; animation-name: bounceIn;"><a href="https://twitter.com/DanPTIT97"><i
-              class="fa fa-twitter"></i></a></li>
-        <li class="facebook animated bounceIn wow delay-03s animated"
-          style="visibility: visible; animation-name: bounceIn;"><a
-            href="https://www.facebook.com/profile.php?id=100009244674126"><i class="fa fa-facebook"></i></a></li>
 
-        <li class="gplus animated bounceIn wow delay-05s animated"
-          style="visibility: visible; animation-name: bounceIn;"><a
-            href="https://www.instagram.com/thangdev.official/"><i class="fa fa-instagram"></i></a></li>
-      </ul>
+          <div class="col-lg-6 wow fadeInLeft delay-06s">
+            <form id="contactForm" action="sendemail.php" method="POST">
+              <div class="form-group">
+                <input type="text" name="name" required="" class="form-control" id="InputName" placeholder="Full Name">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" required="" class="form-control" id="InputEmail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" class="form-control" id="InputSubject" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="4" required="" name="message" id="message-text"
+                  placeholder="Write message"></textarea>
+              </div>
+
+              <button id="btnSendMail" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+      
            
           </div>
         </div>

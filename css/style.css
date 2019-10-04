@@ -362,7 +362,13 @@ p {
 .mrgTop {
     margin-top: 30px;
 }
-.form-control{background: transparent;padding: 20px 15px;border-color: #656565;border-radius: 0;}
+.form-control {
+    background: transparent;
+    padding: 20px 15px;
+    border-color: #656565;
+    border-radius: 0;
+    color: #fff;
+}
 .btn-primary {
     color: #2D2D2D;
     background-color: #FEB11E;

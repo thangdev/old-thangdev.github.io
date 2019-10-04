@@ -17,6 +17,30 @@ $(document).ready(function() {
         return false
 
     });
+
+    $("#btnSendMail").click(async ()=> {
+        console.log("ahihi clicked !!!")
+        console.log($("#InputName").val())
+        let mailContent = {
+            name: $("#InputName").val(),
+            email:$("#InputEmail").val(),
+            message: $("#message-text").val(),
+            subject: $("#InputSubject").val()
+
+        };
+
+        let response = await fetch('https://mighty-woodland-33882.herokuapp.com/sendMail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(mailContent)
+        });
+
+        let result = await response.json();
+        alert(result.message);
+
+    })
 	
     function resizeText() {
         var preferredWidth = 767;
