@@ -17,10 +17,20 @@ $(document).ready(function() {
         return false
 
     });
-
+    $("#loading").hide();
     $("#btnSendMail").click(async ()=> {
+
+
+        if ($("#InputName").val() == '' || $("#InputEmail").val() == '' || $("#message-text").val() == '' || $("#InputSubject").val() == '' ){
+            alert("please complete the missing fill !")
+            return;
+        }
+       
+
         console.log("ahihi clicked !!!")
         console.log($("#InputName").val())
+        $("#loading").show();
+        $("#btnSendMail").hide()
         let mailContent = {
             name: $("#InputName").val(),
             email:$("#InputEmail").val(),
@@ -36,6 +46,8 @@ $(document).ready(function() {
             },
             body: JSON.stringify(mailContent)
         });
+        $("#btnSendMail").show();
+        $("#loading").hide();
 
         let result = await response.json();
         alert(result.message);
