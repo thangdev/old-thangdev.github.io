@@ -33,7 +33,7 @@ $(document).ready(function() {
         $("#btnSendMail").hide()
         let mailContent = {
             name: $("#InputName").val(),
-            email:$("#InputEmail").val(),
+            emailSender:$("#InputEmail").val(),
             message: $("#message-text").val(),
             subject: $("#InputSubject").val()
 
