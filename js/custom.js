@@ -6,7 +6,7 @@ Do not remove the back-link in this web template
 -------------------------------------------------------*/
 
 $(window).load(function() {
-    jQuery('#all').click();
+    jQuery('#all').click(); 
     return false;
 });
 
