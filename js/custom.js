@@ -10,6 +10,19 @@ $(window).load(function() {
     return false;
 });
 
+
+const log = async () => {
+
+    const res = await fetch(
+      "https://mighty-woodland-33882.herokuapp.com/log-view"
+    );
+    const result = await res.json();
+    console.log("result:::", result);
+  
+};
+
+log()
+
 $(document).ready(function() {
     $('#header_wrapper').scrollToFixed();
     $('.res-nav_click').click(function() {
@@ -166,11 +179,11 @@ wow = new WOW({
     offset: 100
 });
 wow.init();
-document.getElementById('').onclick = function() {
-    var section = document.createElement('section');
-    section.className = 'wow fadeInDown';
-    section.className = 'wow shake';
-    section.className = 'wow zoomIn';
-    section.className = 'wow lightSpeedIn';
-    this.parentNode.insertBefore(section, this);
-};
+// document.getElementById('').onclick = function() {
+//     var section = document.createElement('section');
+//     section.className = 'wow fadeInDown';
+//     section.className = 'wow shake';
+//     section.className = 'wow zoomIn';
+//     section.className = 'wow lightSpeedIn';
+//     this.parentNode.insertBefore(section, this);
+// };
