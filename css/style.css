@@ -1161,6 +1161,7 @@ border: 1px solid #CE1139;
 
 li {
     margin-bottom: 10px;
+    font-weight: bold
 }
 
 .social_links li a {
