@@ -14,7 +14,7 @@ $(window).load(function() {
 const log = async () => {
 
     const res = await fetch(
-      "https://mighty-woodland-33882.herokuapp.com/log-view"
+      "https://mighty-woodland-33882.herokuapp.com/github-page-log"
     );
     const result = await res.json();
     console.log("result:::", result);
